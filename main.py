@@ -68,7 +68,6 @@ def check_endgame(player): # naive approach
     return 2  # code for board full
 
 def end_game():
-
     def reset_board(board):
         for i in range(len(board)):
             for j in range(len(board[0])):
@@ -86,7 +85,6 @@ def make_move(player, square):
     BOARD[square // 3][square % 3] = player  # player is either 1 or 2.
 
 # Requests the user for a next move, validates it, makes the move and checks for win.
-
 def play(pPlayer):
     player = pPlayer
     display_board()
